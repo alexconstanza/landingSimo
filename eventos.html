@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEMO | Eventos Exclusivos y Galas VIP</title>
+  <meta name="description" content="Descubre la agenda de eventos exclusivos, desfiles de moda y catas privadas en SEMO Tienda por Departamentos. Reserva tu pase VIP.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER Y NAVEGACIÓN -->
+  <header class="header-navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="SEMO Inicio">
+        <div class="brand-symbol">S</div>
+        <div class="brand-text">SEMO<span>.</span></div>
+      </a>
+
+      <nav aria-label="Navegación Principal">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Promociones</a></li>
+          <li><a href="eventos.html" class="nav-link active">Eventos VIP</a></li>
+          <li><a href="catalogo.html" class="nav-link">Catálogo Ofertas</a></li>
+        </ul>
+      </nav>
+
+      <a href="index.html#suscribirse" class="nav-cta">Club VIP SEMO</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO DE EVENTOS -->
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="pulse-dot"></span>
+            <span>Experiencias de Lujo Reservadas</span>
+          </div>
+
+          <h1 class="hero-title">Eventos Exclusivos <span class="text-gradient-gold">& Noches de Gala</span></h1>
+
+          <p class="hero-description">
+            Como miembro distinguido de SEMO, te invitamos a ser parte de nuestras presentaciones privadas de moda, masterclasses de alta joyería y experiencias gastronómicas con marcas internacionales.
+          </p>
+        </div>
+
+        <div class="hero-media">
+          <div class="media-frame">
+            <img src="img/event.jpg" alt="Noche de Gala y Desfile VIP en SEMO" width="600" height="375">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AGENDA DE EVENTOS PRÓXIMOS -->
+    <section class="section-padding events-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Próximas <span class="text-gradient-gold">Experiencias VIP</span></h2>
+          <p>Cupos limitados por estricto orden de confirmación. Garantiza tu lugar con tu pase digital.</p>
+        </div>
+
+        <div class="events-list">
+          <!-- EVENTO 1 -->
+          <article class="event-banner-card">
+            <div class="event-media">
+              <img src="img/event.jpg" alt="Noche de Gala Fall/Winter Moda SEMO" style="width:100%; height:100%; object-fit:cover;">
+            </div>
+            <div class="event-content">
+              <div class="event-date-badge">
+                <span>✦ Viernes 24 de Octubre • 19:30 HRS</span>
+              </div>
+              <h3 style="font-size: 2rem; margin-bottom: 0.75rem;">Noche VIP de Gala & Pasarela Otoño / Invierno</h3>
+              <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
+                Presentación exclusiva de las últimas colecciones europeas de alta costura, acompañadas de cata de champagne y descuentos especiales del 30% en compras nocturnas.
+              </p>
+              <div>
+                <button class="btn-primary btn-rsvp" data-event="Noche VIP de Gala & Pasarela Otoño / Invierno">Reservar Pase VIP</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- EVENTO 2 -->
+          <article class="event-banner-card">
+            <div class="event-media">
+              <img src="img/catalog.jpg" alt="Masterclass de Perfumería y Cuidado de la Piel" style="width:100%; height:100%; object-fit:cover;">
+            </div>
+            <div class="event-content">
+              <div class="event-date-badge">
+                <span>✦ Sábado 08 de Noviembre • 16:00 HRS</span>
+              </div>
+              <h3 style="font-size: 2rem; margin-bottom: 0.75rem;">Masterclass: Perfumería de Nicho & Alta Cosmetología</h3>
+              <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
+                Aprende el arte del maridaje olfativo con narices de prestigio internacional. Cada asistente recibirá una caja de regalo personalizada de muestras exclusivas.
+              </p>
+              <div>
+                <button class="btn-primary btn-rsvp" data-event="Masterclass: Perfumería de Nicho">Reservar Pase VIP</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- EVENTO 3 -->
+          <article class="event-banner-card">
+            <div class="event-media">
+              <img src="img/hero.jpg" alt="Lanzamiento Tecnológico Exclusivo SEMO" style="width:100%; height:100%; object-fit:cover;">
+            </div>
+            <div class="event-content">
+              <div class="event-date-badge">
+                <span>✦ Jueves 19 de Noviembre • 18:00 HRS</span>
+              </div>
+              <h3 style="font-size: 2rem; margin-bottom: 0.75rem;">Tech & Innovation Premier Showcase</h3>
+              <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
+                Primeras pruebas interactivas de dispositivos de entretenimiento y sonido de última generación antes de su lanzamiento al mercado general.
+              </p>
+              <div>
+                <button class="btn-primary btn-rsvp" data-event="Tech & Innovation Premier Showcase">Reservar Pase VIP</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MODAL RESERVACIÓN RSVP -->
+  <div class="modal-overlay" id="event-modal" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button class="modal-close" id="close-event-modal">&times;</button>
+      <h3 class="text-gradient-gold" style="margin-bottom: 0.5rem;">Reserva de Pase VIP</h3>
+      <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.25rem;">
+        Confirmarás tu entrada para: <strong id="modal-event-name" style="color: var(--gold-light);"></strong>
+      </p>
+
+      <form id="rsvp-form" style="display: flex; flex-direction: column; gap: 1rem;">
+        <input type="text" class="form-input" placeholder="Nombre completo" required>
+        <input type="email" class="form-input" placeholder="Correo electrónico" required>
+        <select class="form-input" style="color: var(--text-muted);" required>
+          <option value="">Selecciona número de acompañantes</option>
+          <option value="1">1 Persona (Individual)</option>
+          <option value="2">2 Personas (+1 Acompañante)</option>
+        </select>
+        <button type="submit" class="btn-primary" style="margin-top: 0.5rem;">Confirmar Asistencia</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer-main">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 SEMO Tienda por Departamentos. Experiencias Exclusivas.</p>
+        <a href="index.html" style="color: var(--gold-light);">Volver al Inicio ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

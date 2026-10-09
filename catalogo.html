@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEMO | Catálogo de Ofertas y Descuentos</title>
+  <meta name="description" content="Explora el catálogo interactivo de ofertas en SEMO Tienda por Departamentos. Moda, tecnología, perfumería y artículos para el hogar al mejor precio.">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Estilos para botones de filtro en catálogo */
+    .filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.75rem;
+      margin-bottom: 2.5rem;
+    }
+    .filter-btn {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-glass);
+      color: var(--text-muted);
+      padding: 0.6rem 1.4rem;
+      border-radius: var(--radius-full);
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: var(--transition-fast);
+    }
+    .filter-btn:hover, .filter-btn.active {
+      background: linear-gradient(135deg, var(--gold-primary), var(--gold-accent));
+      color: #070A11;
+      border-color: var(--gold-primary);
+      box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER Y NAVEGACIÓN -->
+  <header class="header-navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="SEMO Inicio">
+        <div class="brand-symbol">S</div>
+        <div class="brand-text">SEMO<span>.</span></div>
+      </a>
+
+      <nav aria-label="Navegación Principal">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Promociones</a></li>
+          <li><a href="eventos.html" class="nav-link">Eventos VIP</a></li>
+          <li><a href="catalogo.html" class="nav-link active">Catálogo Ofertas</a></li>
+        </ul>
+      </nav>
+
+      <a href="index.html#suscribirse" class="nav-cta">Club VIP SEMO</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-title">
+          <h2>Catálogo de <span class="text-gradient-gold">Descuentos Especiales</span></h2>
+          <p>Explora nuestras mejores ofertas filtradas por categoría. Todos los productos incluyen envío prioritario y garantía SEMO.</p>
+        </div>
+
+        <!-- BARRA DE FILTROS DE CATEGORÍA -->
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">Todos los Productos</button>
+          <button class="filter-btn" data-filter="moda">Moda & Alta Costura</button>
+          <button class="filter-btn" data-filter="perfumeria">Perfumería & Belleza</button>
+          <button class="filter-btn" data-filter="tecnologia">Tecnología & Sonido</button>
+        </div>
+
+        <!-- GRID DEL CATÁLOGO -->
+        <div class="promo-grid">
+          <!-- PRODUCTO 1 -->
+          <article class="promo-card catalog-card" data-category="perfumeria">
+            <div class="card-image-wrap">
+              <img src="img/catalog.jpg" alt="Fragancia de Autor SEMO">
+              <span class="badge-tag">Perfumería</span>
+              <span class="badge-discount">-50% OFF</span>
+            </div>
+            <div class="card-body">
+              <span class="card-category">Perfumería</span>
+              <h3 class="card-title">Extracto de Perfume Royale 100ml</h3>
+              <p class="card-text">Formulación concentrated con notas de sándalo, ámbar gris y flor de azahar.</p>
+              <div class="card-price-row">
+                <span class="price-current">$125.00</span>
+                <span class="price-old">$250.00</span>
+              </div>
+              <button class="btn-secondary btn-quickview" data-title="Extracto de Perfume Royale 100ml" data-price="$125.00" data-old="$250.00" data-desc="Elixir de perfume exclusivo en frasco de cristal tallado a mano.">Ver Detalles</button>
+            </div>
+          </article>
+
+          <!-- PRODUCTO 2 -->
+          <article class="promo-card catalog-card" data-category="moda">
+            <div class="card-image-wrap">
+              <img src="img/hero.jpg" alt="Abrigo de Lana e Hilo de Seda">
+              <span class="badge-tag">Moda</span>
+              <span class="badge-discount">-45% OFF</span>
+            </div>
+            <div class="card-body">
+              <span class="card-category">Moda</span>
+              <h3 class="card-title">Abrigo Lujo Lana Alpaca & Seda</h3>
+              <p class="card-text">Diseño italiano de corte moderno con solapa de terciopelo y forro térmico suave.</p>
+              <div class="card-price-row">
+                <span class="price-current">$289.00</span>
+                <span class="price-old">$525.00</span>
+              </div>
+              <button class="btn-secondary btn-quickview" data-title="Abrigo Lujo Lana Alpaca & Seda" data-price="$289.00" data-old="$525.00" data-desc="Prenda invernal confeccionada artesanalmente en Italia. Confort absoluto.">Ver Detalles</button>
+            </div>
+          </article>
+
+          <!-- PRODUCTO 3 -->
+          <article class="promo-card catalog-card" data-category="tecnologia">
+            <div class="card-image-wrap">
+              <img src="img/event.jpg" alt="Sistema Smart Sound Master">
+              <span class="badge-tag">Tecnología</span>
+              <span class="badge-discount">-30% OFF</span>
+            </div>
+            <div class="card-body">
+              <span class="card-category">Tecnología</span>
+              <h3 class="card-title">Barra de Sonido Atmos Cinema</h3>
+              <p class="card-text">Experiencia inmersiva 7.1.4 canales con subwoofer inalámbrico de respuesta ultrarrápida.</p>
+              <div class="card-price-row">
+                <span class="price-current">$349.00</span>
+                <span class="price-old">$499.00</span>
+              </div>
+              <button class="btn-secondary btn-quickview" data-title="Barra de Sonido Atmos Cinema" data-price="$349.00" data-old="$499.00" data-desc="Sonido cinematográfico para tu sala de estar con conectividad Bluetooth 5.3 y HDMI eARC.">Ver Detalles</button>
+            </div>
+          </article>
+
+          <!-- PRODUCTO 4 -->
+          <article class="promo-card catalog-card" data-category="moda">
+            <div class="card-image-wrap">
+              <img src="img/catalog.jpg" alt="Bolso Piel Italiana SEMO">
+              <span class="badge-tag">Accesorios</span>
+              <span class="badge-discount">-40% OFF</span>
+            </div>
+            <div class="card-body">
+              <span class="card-category">Moda</span>
+              <h3 class="card-title">Bolso Estructurado Piel Genuina</h3>
+              <p class="card-text">Confección en cuero italiano grabado con apliques metálicos dorados.</p>
+              <div class="card-price-row">
+                <span class="price-current">$175.00</span>
+                <span class="price-old">$292.00</span>
+              </div>
+              <button class="btn-secondary btn-quickview" data-title="Bolso Estructurado Piel Genuina" data-price="$175.00" data-old="$292.00" data-desc="Elegante bolso de mano convertible con correa ajustable para hombro.">Ver Detalles</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL QUICK VIEW -->
+  <div class="modal-overlay" id="quickview-modal" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button class="modal-close" id="close-quickview-modal">&times;</button>
+      <h3 id="qv-title" class="text-gradient-gold" style="margin-bottom: 0.5rem;">Detalle del Producto</h3>
+      <p id="qv-desc" style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem;"></p>
+      
+      <div style="display: flex; justify-content: center; align-items: baseline; gap: 1rem; margin-bottom: 1.5rem;">
+        <span id="qv-price" class="price-current"></span>
+        <span id="qv-old-price" class="price-old"></span>
+      </div>
+
+      <button class="btn-primary" onclick="alert('¡Excelente! Oferta reservada para retirar en tienda o envío.')" style="width: 100%;">Reservar Precio Especial</button>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer-main">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 SEMO Tienda por Departamentos. Catálogo Oficial.</p>
+        <a href="index.html" style="color: var(--gold-light);">Volver al Inicio ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

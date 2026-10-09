@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEMO | Promociones Exclusivas y Descuentos Especiales</title>
+  <meta name="description" content="Descubre las promociones de temporada en SEMO Tienda por Departamentos. Descuentos de hasta el 50% en Moda, Tecnología, Perfumería y Hogar. Suscríbete al Club VIP.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER Y NAVEGACIÓN -->
+  <header class="header-navbar" id="top">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="SEMO Inicio">
+        <div class="brand-symbol">S</div>
+        <div class="brand-text">SEMO<span>.</span></div>
+      </a>
+
+      <nav aria-label="Navegación Principal">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link active">Promociones</a></li>
+          <li><a href="eventos.html" class="nav-link">Eventos VIP</a></li>
+          <li><a href="catalogo.html" class="nav-link">Catálogo Ofertas</a></li>
+        </ul>
+      </nav>
+
+      <a href="#suscribirse" class="nav-cta">Club VIP SEMO</a>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <!-- HERO BANNER -->
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="pulse-dot"></span>
+            <span>Edición Limitada • Días SEMO</span>
+          </div>
+
+          <h1 class="hero-title">Grandes Descuentos <span class="text-gradient-gold">y Beneficios Exclusivos</span></h1>
+
+          <p class="hero-description">
+            Bienvenido a la temporada especial de promociones en SEMO. Disfruta de hasta un <strong>50% de descuento</strong> en colecciones seleccionadas de moda, tecnología, perfumería de nicho y diseño de interiores.
+          </p>
+
+          <div class="hero-actions">
+            <a href="catalogo.html" class="btn-primary">Ver Todas las Ofertas</a>
+            <a href="eventos.html" class="btn-secondary">Explorar Eventos VIP</a>
+          </div>
+
+          <!-- CONTADOR REGRESIVO FLASH -->
+          <div class="floating-card">
+            <div>
+              <small style="color: var(--text-muted); font-size: 0.75rem; text-transform: uppercase; font-weight: 700; letter-spacing: 0.05em;">Oferta Flash Termina En:</small>
+            </div>
+            <div class="timer-container" id="flash-timer">
+              <div class="timer-box">
+                <span class="timer-num" id="timer-hours">14</span>
+                <span class="timer-label">Horas</span>
+              </div>
+              <div class="timer-box">
+                <span class="timer-num" id="timer-minutes">45</span>
+                <span class="timer-label">Min</span>
+              </div>
+              <div class="timer-box">
+                <span class="timer-num" id="timer-seconds">22</span>
+                <span class="timer-label">Seg</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <div class="media-frame">
+            <img src="img/hero.jpg" alt="Interior de la tienda por departamentos SEMO con promociones de lujo" width="600" height="375" loading="eager">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROMOCIONES DESTACADAS -->
+    <section class="section-padding" id="promociones">
+      <div class="container">
+        <div class="section-title">
+          <h2>Promociones de <span class="text-gradient-gold">Temporada</span></h2>
+          <p>Aprovecha las ofertas más codiciadas del año disponibles por tiempo limitado en tiendas SEMO y en línea.</p>
+        </div>
+
+        <div class="promo-grid">
+          <!-- CARD 1 -->
+          <article class="promo-card">
+            <div class="card-image-wrap">
+              <img src="img/catalog.jpg" alt="Perfumería y Cosmética de Lujo SEMO">
+              <span class="badge-tag">Exclusivo Web</span>
+              <span class="badge-discount">-50% OFF</span>
+            </div>
+            <div class="card-body">
+              <span class="card-category">Perfumería & Cosmética</span>
+              <h3 class="card-title">Colección Fragancias de Autor</h3>
+              <p class="card-text">Fragancias exclusivas de alta gama y kits de cuidado facial premium con obsequio especial por compra.</p>
+              <div class="card-price-row">
+                <span class="price-current">$89.99</span>
+                <span class="price-old">$179.99</span>
+              </div>
+              <button class="btn-secondary btn-quickview" data-title="Colección Fragancias de Autor" data-price="$89.99" data-old="$179.99" data-desc="Perfumería fina de autor con notas aromáticas orientales y amaderadas. Incluye estuche de regalo de lujo.">Vista Rápida</button>
+            </div>
+          </article>
+
+          <!-- CARD 2 -->
+          <article class="promo-card">
+            <div class="card-image-wrap">
+              <img src="img/hero.jpg" alt="Moda Alta Costura SEMO">
+              <span class="badge-tag">Tendencia</span>
+              <span class="badge-discount">-40% OFF</span>
+            </div>
+            <div class="card-body">
+              <span class="card-category">Moda & Alta Costura</span>
+              <h3 class="card-title">Colección Primavera / Verano</h3>
+              <p class="card-text">Chaquetas de diseñador, vestidos de gala y accesorios premium con descuentos de temporada.</p>
+              <div class="card-price-row">
+                <span class="price-current">$149.00</span>
+                <span class="price-old">$248.00</span>
+              </div>
+              <button class="btn-secondary btn-quickview" data-title="Colección Primavera / Verano" data-price="$149.00" data-old="$248.00" data-desc="Prendas de alta costura confeccionadas en telas de seda y lino importados. Elegancia sin esfuerzo.">Vista Rápida</button>
+            </div>
+          </article>
+
+          <!-- CARD 3 -->
+          <article class="promo-card">
+            <div class="card-image-wrap">
+              <img src="img/event.jpg" alt="Tecnología & Gadgets SEMO">
+              <span class="badge-tag">Oferta Flash</span>
+              <span class="badge-discount">-35% OFF</span>
+            </div>
+            <div class="card-body">
+              <span class="card-category">Tecnología & Sonido</span>
+              <h3 class="card-title">Audífonos & Audio de Alta Fidelidad</h3>
+              <p class="card-text">Cancelación de ruido adaptativa y acabados de titanio con garantía extendida SEMO gratis.</p>
+              <div class="card-price-row">
+                <span class="price-current">$199.50</span>
+                <span class="price-old">$307.00</span>
+              </div>
+              <button class="btn-secondary btn-quickview" data-title="Audífonos & Audio de Alta Fidelidad" data-price="$199.50" data-old="$307.00" data-desc="Sistema de audio Hi-Res inalámbrico con batería de 40 horas y estuche rígido incluido.">Vista Rápida</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMULARIO DE SUSCRIPCIÓN -->
+    <section class="section-padding" id="suscribirse">
+      <div class="container">
+        <div class="subscribe-card">
+          <span style="color: var(--gold-primary); text-transform: uppercase; font-weight: 700; letter-spacing: 0.15em; font-size: 0.85rem;">Membresía Exclusiva</span>
+          <h2 style="margin-top: 0.5rem;" class="text-gradient-gold">Únete al Club VIP SEMO</h2>
+          <p style="color: var(--text-muted); max-width: 550px; margin-inline: auto; margin-top: 0.75rem;">
+            Suscríbete ahora para recibir notificaciones privadas de ventas nocturnas, eventos a puerta cerrada y un <strong>cupón directo del 20% adicional</strong> para tu próxima compra.
+          </p>
+
+          <form id="subscribe-form" class="subscribe-form" action="#" method="POST">
+            <div class="form-group">
+              <input type="email" class="form-input" placeholder="Introduce tu correo electrónico..." required aria-label="Dirección de correo electrónico">
+            </div>
+            <button type="submit" class="btn-primary">Obtener Cupón VIP</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MODAL SUSCRIPCIÓN -->
+  <div class="modal-overlay" id="subscribe-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-card">
+      <button class="modal-close" id="close-subscribe-modal" aria-label="Cerrar modal">&times;</button>
+      <div style="width: 56px; height: 56px; border-radius: 50%; background: rgba(212, 175, 55, 0.15); display: grid; place-items: center; margin-inline: auto; color: var(--gold-primary); font-size: 1.8rem; margin-bottom: 1rem;">✦</div>
+      <h3 id="modal-title" class="text-gradient-gold">¡Suscripción Confirmada!</h3>
+      <p style="color: var(--text-muted); margin-top: 0.5rem; font-size: 0.95rem;">
+        Hemos registrado tu correo <strong id="registered-email" style="color: var(--text-main);"></strong>. Aquí tienes tu cupón exclusivo para usar hoy mismo:
+      </p>
+
+      <div class="coupon-box">SEMOVIP2026</div>
+
+      <p style="color: var(--gold-light); font-size: 0.85rem;">Presenta este código en caja o ingresalo en el carrito digital.</p>
+    </div>
+  </div>
+
+  <!-- MODAL QUICK VIEW -->
+  <div class="modal-overlay" id="quickview-modal" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button class="modal-close" id="close-quickview-modal">&times;</button>
+      <h3 id="qv-title" class="text-gradient-gold" style="margin-bottom: 0.5rem;">Detalle del Producto</h3>
+      <p id="qv-desc" style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem;"></p>
+      
+      <div style="display: flex; justify-content: center; align-items: baseline; gap: 1rem; margin-bottom: 1.5rem;">
+        <span id="qv-price" class="price-current"></span>
+        <span id="qv-old-price" class="price-old"></span>
+      </div>
+
+      <button class="btn-primary" onclick="alert('¡Producto añadido a tus promociones guardadas!')" style="width: 100%;">Reservar Promoción</button>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer-main">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="brand-logo" style="margin-bottom: 1rem;">
+            <div class="brand-symbol">S</div>
+            <div class="brand-text">SEMO<span>.</span></div>
+          </div>
+          <p>La experiencia de compras por departamentos más sofisticada con elegancia, garantía y calidad suprema.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Promociones Principales</a></li>
+            <li><a href="eventos.html">Eventos VIP & Galas</a></li>
+            <li><a href="catalogo.html">Catálogo Completo</a></li>
+            <li><a href="#suscribirse">Club de Beneficios</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Atención al Cliente</h4>
+          <ul class="footer-links">
+            <li><a href="#">Servicio Personalizado</a></li>
+            <li><a href="#">Garantías SEMO</a></li>
+            <li><a href="#">Envíos y Entregas</a></li>
+            <li><a href="#">Sucursales & Horarios</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 SEMO Tienda por Departamentos. Todos los derechos reservados.</p>
+        <p>Promociones válidas por tiempo limitado.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
